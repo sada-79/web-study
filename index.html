@@ -1,8 +1,49 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-<title>はじめてのHTML</title>
+    <meta charset="UTF-8">
+    <title>HTML5サンプル</title>
+    <style>
+        p {
+            color: red;
+            font-weight: bold;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        body {
+            background-color: #04e6b2;
+        }
+    </style>
+    <script>
+        const getDateString = () => {
+            const date = new Date();
+            return `西暦${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日${["日", "月", "火", "水", "木", "金", "土"][date.getDay()]}曜日`;
+        }
+    </script>
 </head>
+
 <body>
-<h1>Hello HTML</h1>
+    <p class="p">
+        <blink>HTML5で作成しました！</blink>
+    </p>
+    <p>
+        <script>document.write(getDateString())</script>
+    <p>
+        <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Design</li>
+            <li>WordPress</li>
+          </ul>
+          
+          <ol>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Design</li>
+            <li>WordPress</li>
+          </ol>
 </body>
+
 </html>
